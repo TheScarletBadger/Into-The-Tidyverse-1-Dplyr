@@ -88,7 +88,11 @@ df2 = df %>% filter(!is.na(Last.name)) %>%
              mutate(Gender = ifelse(Gender=='F','F','M')) %>%
              mutate(Height = Height*100) %>%
              rename(Height_cm = Height) %>%
-             select(Name,Gender,Height_cm)
+             select(Name,Gender,Height_cm) %>%
+             group_by(Gender) %>%
+             summarise(n = n(),mean.height = mean(Height_cm), sd.height = sd(Height_cm))
+
+kable(df2)
 
 
 
