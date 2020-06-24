@@ -7,7 +7,7 @@ df = read.csv('c:\\users\\barry\\desktop\\R code\\workshop demos\\rocky.csv', na
 kable(df)
 str(df)
 
-#--------------------------------------------The Reorder Function
+#--------------------------------------------The Arrange Function
 
 #arrange ascending
 kable(df)
