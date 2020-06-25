@@ -38,11 +38,10 @@ left_join(df2,df1,by='FullName') %>% kable()
 #--------------------------------------------inner join
 
 #keep entries which appear in both df1 and df2
-left_join(df1,df2,by='FullName') %>% kable()
+inner_join(df1,df2,by='FullName') %>% kable()
 
 #keep entries which appear in both df1 and df2
-left_join(df2,df1,by='FullName') %>% kable()
-
+inner_join(df2,df1,by='FullName') %>% kable()
 
 
 #--------------------------------------------Anti join
