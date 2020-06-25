@@ -3,7 +3,7 @@ library(tidyverse)
 library(knitr)
 
 #Remember to change path to where you have stored rocky.csv 
-df = read.csv('c:\\users\\barry\\desktop\\R code\\workshop demos\\rocky.csv', na.strings=c("","NA"))
+df = read.csv('c:/users/barry/desktop/R code/workshop demos/rocky.csv', na.strings=c("","NA"))
 kable(df)
 str(df)
 
